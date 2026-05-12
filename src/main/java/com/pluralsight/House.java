@@ -4,10 +4,10 @@ public class House extends Asset{
     public House(String description, String dateAcquired, double originalCost) {
         super(description, dateAcquired, originalCost);
     }
-    String address;
-    int condition;
-    int squareFoot;
-    int lotSize;
+    private String address;
+    private  int condition;
+    private int squareFoot;
+    private int lotSize;
 
     public House(String description, String dateAcquired, double originalCost, String address, int condition, int squareFoot, int lotSize) {
         super(description, dateAcquired, originalCost);
