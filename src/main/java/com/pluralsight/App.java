@@ -14,6 +14,12 @@ public class App {
 
         assets.add(new Vehicle("Family car", "2018-08-15", 22000.00, "Toyota Camry", 2017, 120000));
 
+        assets.add(new Asset("test", "2025-05-14", 100) {
+            @Override
+            public double getValue() {
+                return 0;
+            }
+        });
         for (Asset asset : assets) {
             System.out.println("Description: " + asset.getDescription());
             System.out.println("Date Acquired: " + asset.getDateAcquired());
